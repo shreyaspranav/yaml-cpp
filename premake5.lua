@@ -7,15 +7,18 @@ project "yaml-cpp"
 
 	files
 	{
-	  "src/**.h",
-    "src/**.cpp",
-    "include/**.h"
+		"src/**.h",
+		"src/**.cpp",
+
+		"include/**.h"
 	}
 
 	includedirs
 	{
-    "include"
+		"include/"
 	}
+
+	defines {"yaml_cpp_EXPORTS"}
 
 	filter "system:windows"
 		systemversion "latest"
