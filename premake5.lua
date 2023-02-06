@@ -1,5 +1,5 @@
 project "yaml-cpp"
-	kind "StaticLib"
+	kind "SharedLib"
 	language "C++"
 
 	targetdir ("%{wks.location}/bin/" .. bin_folder .. "/")
