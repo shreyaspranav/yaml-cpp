@@ -2,6 +2,9 @@ project "yaml-cpp"
 	kind "SharedLib"
 	language "C++"
 
+	-- To stop those annoying dll export warnings:
+	warnings "Off"
+
 	targetdir ("%{wks.location}/bin/" .. bin_folder .. "/")
 	objdir ("%{wks.location}/bin/" .. bin_folder .. "/obj")
 
