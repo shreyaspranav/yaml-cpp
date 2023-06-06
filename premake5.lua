@@ -36,3 +36,6 @@ project "yaml-cpp"
 		runtime "Release"
 		optimize "on"
 		symbols "off"
+
+	filter "action:vs*"
+		buildoptions "/w"
