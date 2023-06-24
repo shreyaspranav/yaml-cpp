@@ -1,12 +1,13 @@
 project "yaml-cpp"
 	kind "SharedLib"
 	language "C++"
+	staticruntime "on"
 
 	-- To stop those annoying dll export warnings:
 	warnings "Off"
 
-	targetdir ("%{wks.location}/bin/" .. bin_folder .. "/")
-	objdir ("%{wks.location}/bin/" .. bin_folder .. "/obj")
+	targetdir ("%{wks.location}/bin/" .. bin_folder .. "/bin/%{prj.name}")
+	objdir ("%{wks.location}/bin/" .. bin_folder .. "/obj/%{prj.name}")
 
 	files
 	{
